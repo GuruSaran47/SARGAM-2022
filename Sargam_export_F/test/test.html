@@ -1,0 +1,58 @@
+<html lang='en'>
+    <head>
+        <title> Test Page </title>
+        <style>
+            .bck_circles {
+                --width: 60.5vw;
+                -webkit-animation: LanderRings_rotateRings__hMOi5 var(--speed) infinite linear;
+                animation: LanderRings_rotateRings__hMOi5 var(--speed) infinite linear;
+                border-radius: 50%;
+                height: calc((1 - var(--stretch))*(var(--width) + 10px));
+                left: 50%;
+                position: absolute;
+                top: 0;
+                -webkit-transform: translate(calc(-50% + var(--offsetX)),calc(-53% + var(--offsetY)));
+                transform: translate(calc(-50% + var(--offsetX)),calc(-53% + var(--offsetY)));
+                -webkit-transform-origin: calc(50% - var(--offsetX)) calc(50% - var(--offsetY));
+                transform-origin: calc(50% - var(--offsetX)) calc(50% - var(--offsetY));
+                width: calc((1 + var(--stretch))*var(--width));
+                z-index: 3;
+            }
+            .rotate {
+                animation: rotation 8s infinite linear;
+              }
+              
+              @keyframes rotation {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(359deg);
+                }
+              }
+              .link{
+                margin:10px 0;
+              }
+              
+              
+              .rte_{
+                animation: animName 10s linear infinite;
+                
+              }
+              
+              @keyframes animName {
+               0%{
+                  transform: rotate(0deg);
+                 }
+              100%{
+                  transform: rotate(360deg);
+                 }
+              }
+              
+        </style>
+    </head>
+    <body>
+        <div class="rte_"><img src="r10.png"></div>
+        
+    </body>
+</html>
